@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "led.h": "c",
+        "tendermint2.h": "c"
+    }
+}

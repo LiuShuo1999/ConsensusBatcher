@@ -1,0 +1,17 @@
+.\objects\hpke_bn254.o: ..\BN254\hpke_BN254.c
+.\objects\hpke_bn254.o: D:\MDK5.36\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\hpke_bn254.o: D:\MDK5.36\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\hpke_bn254.o: D:\MDK5.36\ARM\ARMCC\Bin\..\include\string.h
+.\objects\hpke_bn254.o: ..\BN254\hpke_BN254.h
+.\objects\hpke_bn254.o: ..\BN254\ecdh_BN254.h
+.\objects\hpke_bn254.o: ..\BN254\ecp_BN254.h
+.\objects\hpke_bn254.o: ..\BN254\fp_BN254.h
+.\objects\hpke_bn254.o: ..\BN254\big_256_28.h
+.\objects\hpke_bn254.o: D:\MDK5.36\ARM\ARMCC\Bin\..\include\inttypes.h
+.\objects\hpke_bn254.o: D:\MDK5.36\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\hpke_bn254.o: ..\BN254\arch.h
+.\objects\hpke_bn254.o: D:\MDK5.36\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\hpke_bn254.o: ..\BN254\core.h
+.\objects\hpke_bn254.o: ..\BN254\config_big_256_28.h
+.\objects\hpke_bn254.o: ..\BN254\config_field_BN254.h
+.\objects\hpke_bn254.o: ..\BN254\config_curve_BN254.h

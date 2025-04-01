@@ -1,0 +1,16 @@
+.\objects\ecp2_bn158.o: ..\BN158\ecp2_BN158.c
+.\objects\ecp2_bn158.o: ..\BN158\ecp2_BN158.h
+.\objects\ecp2_bn158.o: ..\BN158\fp2_BN158.h
+.\objects\ecp2_bn158.o: ..\BN158\fp_BN158.h
+.\objects\ecp2_bn158.o: ..\BN158\big_160_28.h
+.\objects\ecp2_bn158.o: D:\MDK5.36\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\ecp2_bn158.o: D:\MDK5.36\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\ecp2_bn158.o: D:\MDK5.36\ARM\ARMCC\Bin\..\include\inttypes.h
+.\objects\ecp2_bn158.o: D:\MDK5.36\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\ecp2_bn158.o: ..\BN158\arch.h
+.\objects\ecp2_bn158.o: D:\MDK5.36\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\ecp2_bn158.o: ..\BN158\core.h
+.\objects\ecp2_bn158.o: ..\BN158\config_big_160_28.h
+.\objects\ecp2_bn158.o: ..\BN158\config_field_BN158.h
+.\objects\ecp2_bn158.o: ..\BN158\config_curve_BN158.h
+.\objects\ecp2_bn158.o: ..\BN158\ecp_BN158.h

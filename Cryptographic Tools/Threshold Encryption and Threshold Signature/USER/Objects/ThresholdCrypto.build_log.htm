@@ -1,0 +1,456 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: shuo liu, sdu, LIC=KRMW3-AVM5U-FW92N-YWPKL-SK4DH-9NB83
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.36.0.0
+Toolchain Path:  D:\MDK5.36\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+B:\25-3代码整理\ConsensusBatcher\Crypto Tools\Threshold Encryption & Threshold Signature\USER\ThresholdCrypto.uvprojx
+Project File Date:  03/15/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\MDK5.36\ARM\ARMCC\Bin'
+*** Warning: You are compiling one or more files of source type C++ and have selected 'use MicroLIB'. MicroLIB does not support C++!
+  
+Build target 'Target 1'
+assembling startup_stm32f767xx.s...
+compiling stm32f7xx_hal_adc.c...
+compiling stm32f7xx_hal_dma_ex.c...
+compiling stm32f7xx_nucleo_144.c...
+compiling stm32f7xx_hal_adc_ex.c...
+compiling stm32f7xx_hal_msp.c...
+compiling stm32f7xx_hal_gpio.c...
+compiling stm32f7xx_hal_i2c.c...
+compiling stm32f7xx_hal_cortex.c...
+compiling stm32f7xx_hal.c...
+compiling delay.c...
+compiling stm32f7xx_hal_dma.c...
+compiling stm32f7xx_it.c...
+compiling usart.c...
+compiling sys.c...
+compiling main.c...
+..\APPLICATION\ThresholdCrypto.h(116): warning:  #1295-D: Deprecated declaration tendermint2 - give arg types
+  void tendermint2();
+main.c(19): warning:  #1295-D: Deprecated declaration init_public_key - give arg types
+  void init_public_key();
+main.c(144): warning:  #223-D: function "btim_tim5_int_init" declared implicitly
+  	btim_tim5_int_init(9000-1,10800-1);//108Mhz/10800 = 10000hz  900ms
+main.c(145): warning:  #223-D: function "btim_tim2_int_init" declared implicitly
+      btim_tim2_int_init(9000-1,108-1);
+main.c(146): warning:  #223-D: function "btim_tim9_int_init" declared implicitly
+  	btim_tim9_int_init(9000-1,21600-1);//216*1000,000hz/21600 = 10000hz  500ms
+main.c(153): warning:  #223-D: function "ThresCrypto" declared implicitly
+  	ThresCrypto();
+main.c: 6 warnings, 0 errors
+compiling stm32f7xx_hal_lptim.c...
+compiling stm32f7xx_hal_i2c_ex.c...
+compiling btim.c...
+..\APPLICATION\ThresholdCrypto.h(116): warning:  #1295-D: Deprecated declaration tendermint2 - give arg types
+  void tendermint2();
+..\HARDWARE\TIMER\btim.c(481): warning:  #223-D: function "GPIO_Set" declared implicitly
+  	GPIO_Set(GPIOD,PIN14|PIN15,GPIO_MODE_AF,GPIO_OTYPE_PP,GPIO_SPEED_100M,GPIO_PUPD_PU);//复用功能,上拉输出
+..\HARDWARE\TIMER\btim.c(482): warning:  #223-D: function "GPIO_AF_Set" declared implicitly
+  	GPIO_AF_Set(GPIOD,14,2);	//PD14,AF2 
+..\HARDWARE\TIMER\btim.c: 3 warnings, 0 errors
+compiling usart3.c...
+..\APPLICATION\ThresholdCrypto.h(116): warning:  #1295-D: Deprecated declaration tendermint2 - give arg types
+  void tendermint2();
+..\HARDWARE\USART3\usart3.c: 1 warning, 0 errors
+compiling stm32f7xx_hal_usart.c...
+compiling stm32f7xx_hal_rng.c...
+compiling stm32f7xx_hal_tim.c...
+compiling stm32f7xx_hal_rcc_ex.c...
+compiling stm32f7xx_hal_pwr.c...
+compiling rng.c...
+compiling stm32f7xx_hal_pwr_ex.c...
+compiling croutine.c...
+compiling led.c...
+compiling sha2.c...
+compiling stm32f7xx_hal_tim_ex.c...
+compiling uECC.cpp...
+compiling test_rs.c...
+compiling rs.c...
+..\ErasureCode\rs.c(821): warning:  #550-D: variable "nos"  was set but never used
+      int i, j, c, swap, subMatrixRow, dataShards, nos, nshards;
+..\ErasureCode\rs.c(821): warning:  #550-D: variable "nshards"  was set but never used
+      int i, j, c, swap, subMatrixRow, dataShards, nos, nshards;
+..\ErasureCode\rs.c(531): warning:  #550-D: variable "fec_initialized"  was set but never used
+  static int fec_initialized = 0 ;
+..\ErasureCode\rs.c: 3 warnings, 0 errors
+compiling bls_BN158.c...
+..\signature\BN158\bls_BN158.h(51): warning:  #1295-D: Deprecated declaration BLS_BN158_INIT - give arg types
+  int BLS_BN158_INIT();
+..\signature\BN158\bls_BN158.c(145): warning:  #177-D: variable "G"  was declared but never referenced
+      ECP2_BN158 G, PK;
+..\signature\BN158\bls_BN158.c: 2 warnings, 0 errors
+compiling ecdh_BN158.c...
+compiling system_stm32f7xx.c...
+compiling stm32f7xx_hal_uart.c...
+compiling ecp_BN158.c...
+..\signature\BN158\ecp_BN158.c(611): warning:  #177-D: variable "a"  was declared but never referenced
+      BIG_160_28 a,x,y;
+..\signature\BN158\ecp_BN158.c(613): warning:  #177-D: variable "D2"  was declared but never referenced
+      FP_BN158 D2,hint,GX1;
+..\signature\BN158\ecp_BN158.c(613): warning:  #177-D: variable "hint"  was declared but never referenced
+      FP_BN158 D2,hint,GX1;
+..\signature\BN158\ecp_BN158.c(613): warning:  #177-D: variable "GX1"  was declared but never referenced
+      FP_BN158 D2,hint,GX1;
+..\signature\BN158\ecp_BN158.c(1065): warning:  #177-D: variable "t3"  was declared but never referenced
+      FP_BN158 t0, t1, t2, t3, x3, y3, z3, b;
+..\signature\BN158\ecp_BN158.c(1065): warning:  #177-D: variable "z3"  was declared but never referenced
+      FP_BN158 t0, t1, t2, t3, x3, y3, z3, b;
+..\signature\BN158\ecp_BN158.c(1065): warning:  #177-D: variable "b"  was declared but never referenced
+      FP_BN158 t0, t1, t2, t3, x3, y3, z3, b;
+..\signature\BN158\ecp_BN158.c(1269): warning:  #177-D: variable "b"  was declared but never referenced
+      FP_BN158 t0, t1, t2, t3, t4, x3, y3, z3, b;
+..\signature\BN158\ecp_BN158.c: 8 warnings, 0 errors
+compiling eddsa_BN158.c...
+..\signature\BN158\eddsa_BN158.h(73): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\signature\BN158\eddsa_BN158.c: 1 warning, 0 errors
+compiling ecp2_BN158.c...
+..\signature\BN158\ecp2_BN158.c(696): warning:  #177-D: variable "i"  was declared but never referenced
+      int i,k,sgn,ne,isox,isoy,iso=HTC_ISO_G2_BN158;
+..\signature\BN158\ecp2_BN158.c(696): warning:  #177-D: variable "k"  was declared but never referenced
+      int i,k,sgn,ne,isox,isoy,iso=HTC_ISO_G2_BN158;
+..\signature\BN158\ecp2_BN158.c(696): warning:  #177-D: variable "isox"  was declared but never referenced
+      int i,k,sgn,ne,isox,isoy,iso=HTC_ISO_G2_BN158;
+..\signature\BN158\ecp2_BN158.c(696): warning:  #177-D: variable "isoy"  was declared but never referenced
+      int i,k,sgn,ne,isox,isoy,iso=HTC_ISO_G2_BN158;
+..\signature\BN158\ecp2_BN158.c(696): warning:  #177-D: variable "iso"  was declared but never referenced
+      int i,k,sgn,ne,isox,isoy,iso=HTC_ISO_G2_BN158;
+..\signature\BN158\ecp2_BN158.c: 5 warnings, 0 errors
+compiling fp_BN158.c...
+..\signature\BN158\fp_BN158.c(811): warning:  #177-D: variable "i"  was declared but never referenced
+      int i,j,k,u,e=PM1D2_BN158;
+..\signature\BN158\fp_BN158.c: 1 warning, 0 errors
+compiling fp2_BN158.c...
+..\signature\BN158\fp2_BN158.c(336): warning:  #177-D: variable "m"  was declared but never referenced
+      BIG_160_28 m, b;
+..\signature\BN158\fp2_BN158.c(336): warning:  #177-D: variable "b"  was declared but never referenced
+      BIG_160_28 m, b;
+..\signature\BN158\fp2_BN158.c: 2 warnings, 0 errors
+compiling stm32f7xx_hal_rcc.c...
+compiling fp4_BN158.c...
+compiling mpin_BN158.c...
+compiling fp12_BN158.c...
+compiling hpke_BN158.c...
+..\signature\BN158\hpke_BN158.c(125): warning:  #550-D: variable "res"  was set but never used
+      int res,kem;
+..\signature\BN158\hpke_BN158.c(149): warning:  #177-D: variable "res"  was declared but never referenced
+      int res,kem;
+..\signature\BN158\hpke_BN158.c(174): warning:  #177-D: variable "res"  was declared but never referenced
+      int res,kem;
+..\signature\BN158\hpke_BN158.c(207): warning:  #177-D: variable "res"  was declared but never referenced
+      int res,kem;
+..\signature\BN158\hpke_BN158.c: 4 warnings, 0 errors
+compiling pair_BN158.c...
+..\signature\BN158\pair_BN158.c(297): warning:  #177-D: variable "x"  was declared but never referenced
+      BIG_160_28 x, n, n3;
+..\signature\BN158\pair_BN158.c(342): warning:  #177-D: variable "j"  was declared but never referenced
+      int i, j, nb, bt;
+..\signature\BN158\pair_BN158.c(343): warning:  #177-D: variable "x"  was declared but never referenced
+      BIG_160_28 x, n, n3;
+..\signature\BN158\pair_BN158.c(416): warning:  #177-D: variable "x"  was declared but never referenced
+      BIG_160_28 x, n, n3;
+..\signature\BN158\pair_BN158.c(502): warning:  #177-D: variable "x"  was declared but never referenced
+      BIG_160_28 x, n, n3;
+..\signature\BN158\pair_BN158.c(1078): warning:  #177-D: variable "W"  was declared but never referenced
+      ECP_BN158 W,T;
+..\signature\BN158\pair_BN158.c(1078): warning:  #177-D: variable "T"  was declared but never referenced
+      ECP_BN158 W,T;
+..\signature\BN158\pair_BN158.c(1079): warning:  #177-D: variable "x"  was declared but never referenced
+      BIG_160_28 x;
+..\signature\BN158\pair_BN158.c(1080): warning:  #177-D: variable "cru"  was declared but never referenced
+      FP_BN158 cru;
+..\signature\BN158\pair_BN158.c: 9 warnings, 0 errors
+compiling big_160_28.c...
+..\signature\BN158\big_160_28.c(567): warning:  #177-D: variable "i"  was declared but never referenced
+      int i;
+..\signature\BN158\big_160_28.c(572): warning:  #177-D: variable "k"  was declared but never referenced
+      int k;
+..\signature\BN158\big_160_28.c(714): warning:  #177-D: variable "i"  was declared but never referenced
+      int i, j;
+..\signature\BN158\big_160_28.c(714): warning:  #177-D: variable "j"  was declared but never referenced
+      int i, j;
+..\signature\BN158\big_160_28.c(846): warning:  #177-D: variable "i"  was declared but never referenced
+      int i, k;
+..\signature\BN158\big_160_28.c(846): warning:  #177-D: variable "k"  was declared but never referenced
+      int i, k;
+..\signature\BN158\big_160_28.c: 6 warnings, 0 errors
+compiling aes.c...
+compiling hmac.c...
+compiling oct.c...
+compiling hash.c...
+compiling rand.c...
+compiling randapi.c...
+compiling rom_curve_BN158.c...
+compiling rom_field_BN158.c...
+compiling timers.c...
+..\FreeRTOS\timers.c(307): warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( xReturn );
+..\FreeRTOS\timers.c(396): warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( ( xTimerPeriodInTicks > 0 ) );
+..\FreeRTOS\timers.c(422): warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( xTimer );
+..\FreeRTOS\timers.c(464): warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( ( xTimerTaskHandle != NULL ) );
+..\FreeRTOS\timers.c(473): warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( xTimer );
+..\FreeRTOS\timers.c(483): warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( xTimer );
+..\FreeRTOS\timers.c(493): warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( xTimer );
+..\FreeRTOS\timers.c(520): warning:  #223-D: function "printf" declared implicitly
+  			configASSERT( xResult );
+..\FreeRTOS\timers.c(743): warning:  #223-D: function "printf" declared implicitly
+  				configASSERT( pxCallback );
+..\FreeRTOS\timers.c(801): warning:  #223-D: function "printf" declared implicitly
+  							configASSERT( xResult );
+..\FreeRTOS\timers.c(824): warning:  #223-D: function "printf" declared implicitly
+  					configASSERT( ( pxTimer->xTimerPeriodInTicks > 0 ) );
+..\FreeRTOS\timers.c(914): warning:  #223-D: function "printf" declared implicitly
+  				configASSERT( xResult );
+..\FreeRTOS\timers.c(986): warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( xTimer );
+..\FreeRTOS\timers.c(1007): warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( xTimer );
+..\FreeRTOS\timers.c(1023): warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( xTimer );
+..\FreeRTOS\timers.c(1067): warning:  #223-D: function "printf" declared implicitly
+  		configASSERT( xTimerQueue );
+..\FreeRTOS\timers.c: 16 warnings, 0 errors
+compiling heap_4.c...
+..\FreeRTOS\portable\MemMang\heap_4.c(191): warning:  #223-D: function "printf" declared implicitly
+  					configASSERT( ( xWantedSize & portBYTE_ALIGNMENT_MASK ) == 0 );
+..\FreeRTOS\portable\MemMang\heap_4.c(236): warning:  #223-D: function "printf" declared implicitly
+  						configASSERT( ( ( ( size_t ) pxNewBlockLink ) & portBYTE_ALIGNMENT_MASK ) == 0 );
+..\FreeRTOS\portable\MemMang\heap_4.c(300): warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( ( ( ( size_t ) pvReturn ) & ( size_t ) portBYTE_ALIGNMENT_MASK ) == 0 );
+..\FreeRTOS\portable\MemMang\heap_4.c(320): warning:  #223-D: function "printf" declared implicitly
+  		configASSERT( ( pxLink->xBlockSize & xBlockAllocatedBit ) != 0 );
+..\FreeRTOS\portable\MemMang\heap_4.c(321): warning:  #223-D: function "printf" declared implicitly
+  		configASSERT( pxLink->pxNextFreeBlock == NULL );
+..\FreeRTOS\portable\MemMang\heap_4.c: 5 warnings, 0 errors
+compiling event_groups.c...
+..\FreeRTOS\event_groups.c(215): warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( ( uxBitsToWaitFor & eventEVENT_BITS_CONTROL_BYTES ) == 0 );
+..\FreeRTOS\event_groups.c(216): warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( uxBitsToWaitFor != 0 );
+..\FreeRTOS\event_groups.c(219): warning:  #223-D: function "printf" declared implicitly
+  		configASSERT( !( ( xTaskGetSchedulerState() == taskSCHEDULER_SUSPENDED ) && ( xTicksToWait != 0 ) ) );
+..\FreeRTOS\event_groups.c(333): warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( xEventGroup );
+..\FreeRTOS\event_groups.c(334): warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( ( uxBitsToWaitFor & eventEVENT_BITS_CONTROL_BYTES ) == 0 );
+..\FreeRTOS\event_groups.c(335): warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( uxBitsToWaitFor != 0 );
+..\FreeRTOS\event_groups.c(338): warning:  #223-D: function "printf" declared implicitly
+  		configASSERT( !( ( xTaskGetSchedulerState() == taskSCHEDULER_SUSPENDED ) && ( xTicksToWait != 0 ) ) );
+..\FreeRTOS\event_groups.c(479): warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( xEventGroup );
+..\FreeRTOS\event_groups.c(480): warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( ( uxBitsToClear & eventEVENT_BITS_CONTROL_BYTES ) == 0 );
+..\FreeRTOS\event_groups.c(541): warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( xEventGroup );
+..\FreeRTOS\event_groups.c(542): warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( ( uxBitsToSet & eventEVENT_BITS_CONTROL_BYTES ) == 0 );
+..\FreeRTOS\event_groups.c(637): warning:  #223-D: function "printf" declared implicitly
+  			configASSERT( pxTasksWaitingForBits->xListEnd.pxNext != ( ListItem_t * ) &( pxTasksWaitingForBits->xListEnd ) );
+..\FreeRTOS\event_groups.c: 12 warnings, 0 errors
+compiling list.c...
+compiling mw1268_uart.c...
+compiling queue.c...
+..\FreeRTOS\queue.c(283): warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( pxQueue );
+..\FreeRTOS\queue.c(392): warning:  #223-D: function "printf" declared implicitly
+  		configASSERT( uxQueueLength > ( UBaseType_t ) 0 );
+..\FreeRTOS\queue.c(577): warning:  #223-D: function "printf" declared implicitly
+  		configASSERT( pxMutex );
+..\FreeRTOS\queue.c(632): warning:  #223-D: function "printf" declared implicitly
+  		configASSERT( pxMutex );
+..\FreeRTOS\queue.c(701): warning:  #223-D: function "printf" declared implicitly
+  		configASSERT( uxMaxCount != 0 );
+..\FreeRTOS\queue.c(702): warning:  #223-D: function "printf" declared implicitly
+  		configASSERT( uxInitialCount <= uxMaxCount );
+..\FreeRTOS\queue.c(729): warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( pxQueue );
+..\FreeRTOS\queue.c(730): warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( !( ( pvItemToQueue == NULL ) && ( pxQueue->uxItemSize != ( UBaseType_t ) 0U ) ) );
+..\FreeRTOS\queue.c(731): warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( !( ( xCopyPosition == queueOVERWRITE ) && ( pxQueue->uxLength != 1 ) ) );
+..\FreeRTOS\queue.c(734): warning:  #223-D: function "printf" declared implicitly
+  		configASSERT( !( ( xTaskGetSchedulerState() == taskSCHEDULER_SUSPENDED ) && ( xTicksToWait != 0 ) ) );
+..\FreeRTOS\queue.c(927): warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( pxQueue );
+..\FreeRTOS\queue.c(928): warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( !( ( pvItemToQueue == NULL ) && ( pxQueue->uxItemSize != ( UBaseType_t ) 0U ) ) );
+..\FreeRTOS\queue.c(929): warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( !( ( xCopyPosition == queueOVERWRITE ) && ( pxQueue->uxLength != 1 ) ) );
+..\FreeRTOS\queue.c(1084): warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( pxQueue );
+..\FreeRTOS\queue.c(1088): warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( pxQueue->uxItemSize == 0 );
+..\FreeRTOS\queue.c(1093): warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( !( ( pxQueue->uxQueueType == queueQUEUE_IS_MUTEX ) && ( pxQueue->pxMutexHolder != NULL ) ) );
+..\FreeRTOS\queue.c(1244): warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( pxQueue );
+..\FreeRTOS\queue.c(1245): warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( !( ( pvBuffer == NULL ) && ( pxQueue->uxItemSize != ( UBaseType_t ) 0U ) ) );
+..\FreeRTOS\queue.c(1248): warning:  #223-D: function "printf" declared implicitly
+  		configASSERT( !( ( xTaskGetSchedulerState() == taskSCHEDULER_SUSPENDED ) && ( xTicksToWait != 0 ) ) );
+..\FreeRTOS\queue.c(1440): warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( pxQueue );
+..\FreeRTOS\queue.c(1441): warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( !( ( pvBuffer == NULL ) && ( pxQueue->uxItemSize != ( UBaseType_t ) 0U ) ) );
+..\FreeRTOS\queue.c(1532): warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( pxQueue );
+..\FreeRTOS\queue.c(1533): warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( !( ( pvBuffer == NULL ) && ( pxQueue->uxItemSize != ( UBaseType_t ) 0U ) ) );
+..\FreeRTOS\queue.c(1534): warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( pxQueue->uxItemSize != 0 ); /* Can't peek a semaphore. */
+..\FreeRTOS\queue.c(1583): warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( xQueue );
+..\FreeRTOS\queue.c(1601): warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( pxQueue );
+..\FreeRTOS\queue.c(1617): warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( xQueue );
+..\FreeRTOS\queue.c(1629): warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( pxQueue );
+..\FreeRTOS\queue.c(1939): warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( xQueue );
+..\FreeRTOS\queue.c(1978): warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( xQueue );
+..\FreeRTOS\queue.c(2510): warning:  #223-D: function "printf" declared implicitly
+  		configASSERT( pxQueueSetContainer );
+..\FreeRTOS\queue.c(2511): warning:  #223-D: function "printf" declared implicitly
+  		configASSERT( pxQueueSetContainer->uxMessagesWaiting < pxQueueSetContainer->uxLength );
+..\FreeRTOS\queue.c: 32 warnings, 0 errors
+compiling port.c...
+..\FreeRTOS\portable\RVDS\ARM_CM7\r0p1\port.c(265): warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( uxCriticalNesting == ~0UL );
+..\FreeRTOS\portable\RVDS\ARM_CM7\r0p1\port.c(355): warning:  #223-D: function "printf" declared implicitly
+  		configASSERT( ucMaxPriorityValue == ( configKERNEL_INTERRUPT_PRIORITY & ucMaxPriorityValue ) );
+..\FreeRTOS\portable\RVDS\ARM_CM7\r0p1\port.c(409): warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( uxCriticalNesting == 1000UL );
+..\FreeRTOS\portable\RVDS\ARM_CM7\r0p1\port.c(425): warning:  #223-D: function "printf" declared implicitly
+  		configASSERT( ( portNVIC_INT_CTRL_REG & portVECTACTIVE_MASK ) == 0 );
+..\FreeRTOS\portable\RVDS\ARM_CM7\r0p1\port.c(432): warning:  #223-D: function "printf" declared implicitly
+  	configASSERT( uxCriticalNesting );
+..\FreeRTOS\portable\RVDS\ARM_CM7\r0p1\port.c(754): warning:  #223-D: function "printf" declared implicitly
+  			configASSERT( ucCurrentPriority >= ucMaxSysCallPriority );
+..\FreeRTOS\portable\RVDS\ARM_CM7\r0p1\port.c(770): warning:  #223-D: function "printf" declared implicitly
+  		configASSERT( ( portAIRCR_REG & portPRIORITY_GROUP_MASK ) <= ulMaxPRIGROUPValue );
+..\FreeRTOS\portable\RVDS\ARM_CM7\r0p1\port.c: 7 warnings, 0 errors
+compiling tasks.c...
+compiling mw1268_app.c...
+..\APPLICATION\ThresholdCrypto.h(116): warning:  #1295-D: Deprecated declaration tendermint2 - give arg types
+  void tendermint2();
+..\LORA\mw1268_app.c(108): warning:  #223-D: function "GPIO_Pin_Set" declared implicitly
+              LED0(0); /*DS0亮*/
+..\LORA\mw1268_app.c(116): warning:  #223-D: function "usart3_rx" declared implicitly
+  				usart3_rx(0);
+..\LORA\mw1268_app.c(121): warning:  #223-D: function "GPIO_Pin_Set" declared implicitly
+  				LED1(led1sta);led1sta = ~led1sta;
+..\LORA\mw1268_app.c(174): warning:  #223-D: function "GPIO_Pin_Set" declared implicitly
+              LED0(1); /*DS0灭*/
+..\LORA\mw1268_app.c(335): warning:  #188-D: enumerated type mixed with another type
+  	Lora_Device_Sta=0;//标记"配置模式"
+..\LORA\mw1268_app.c(364): warning:  #188-D: enumerated type mixed with another type
+  	Lora_Device_Sta=1;//标记"接收模式"
+..\LORA\mw1268_app.c(384): warning:  #177-D: variable "num"  was declared but never referenced
+      static uint8_t num = 0;
+..\LORA\mw1268_app.c(385): warning:  #177-D: variable "addr"  was declared but never referenced
+      uint16_t addr;
+..\LORA\mw1268_app.c(386): warning:  #177-D: variable "chn"  was declared but never referenced
+      uint8_t chn;
+..\LORA\mw1268_app.c(387): warning:  #177-D: variable "i"  was declared but never referenced
+      uint16_t i = 0;
+..\LORA\mw1268_app.c: 11 warnings, 0 errors
+compiling ThresholdCrypto.c...
+..\APPLICATION\ThresholdCrypto.h(116): warning:  #1295-D: Deprecated declaration tendermint2 - give arg types
+  void tendermint2();
+..\signature\BN158\bls_BN158.h(51): warning:  #1295-D: Deprecated declaration BLS_BN158_INIT - give arg types
+  int BLS_BN158_INIT();
+..\APPLICATION\ThresholdCrypto.c(45): warning:  #223-D: function "LoRa_Init" declared implicitly
+  	while(LoRa_Init())//初始化LORA模块
+..\APPLICATION\ThresholdCrypto.c(55): warning:  #223-D: function "LoRa_Set" declared implicitly
+  	LoRa_Set();
+..\APPLICATION\ThresholdCrypto.c(104): warning:  #1295-D: Deprecated declaration testdemo - give arg types
+  void testdemo();
+..\APPLICATION\ThresholdCrypto.c(211): warning:  #223-D: function "RNG_Get_RandomNum" declared implicitly
+  	u32 ran = RNG_Get_RandomNum();	
+..\APPLICATION\ThresholdCrypto.c(214): warning:  #223-D: function "CREATE_CSPRNG" declared implicitly
+      CREATE_CSPRNG(&RNGx, &RAW);  // initialise strong RNG
+..\APPLICATION\ThresholdCrypto.c(315): warning:  #223-D: function "RNG_Get_RandomNum" declared implicitly
+  	u32 ran = RNG_Get_RandomNum();
+..\APPLICATION\ThresholdCrypto.c(318): warning:  #223-D: function "CREATE_CSPRNG" declared implicitly
+      CREATE_CSPRNG(&RNGx, &RAW);  // initialise strong RNG
+..\APPLICATION\ThresholdCrypto.c(526): warning:  #177-D: variable "sk_num"  was declared but never referenced
+  	BIG_160_28 sk_num;
+..\APPLICATION\ThresholdCrypto.c(661): warning:  #223-D: function "LoRa_SendData" declared implicitly
+  		LoRa_SendData(Send_Data_buff);
+..\APPLICATION\ThresholdCrypto.c(664): warning:  #223-D: function "LoRa_SendData" declared implicitly
+  		LoRa_SendData(Send_Data_buff);
+..\APPLICATION\ThresholdCrypto.c(760): warning:  #223-D: function "LoRa_SendData" declared implicitly
+  		LoRa_SendData(Send_Data_buff);
+..\APPLICATION\ThresholdCrypto.c(763): warning:  #223-D: function "LoRa_SendData" declared implicitly
+  		LoRa_SendData(Send_Data_buff);
+..\APPLICATION\ThresholdCrypto.c(815): warning:  #223-D: function "init_public_key" declared implicitly
+  	init_public_key();
+..\APPLICATION\ThresholdCrypto.c(823): warning:  #223-D: function "LoRa_SendData" declared implicitly
+  		sprintf((char*)Send_Data_buff,"***Threshold_Encryption***");LoRa_SendData(Send_Data_buff);
+..\APPLICATION\ThresholdCrypto.c(825): warning:  #223-D: function "LoRa_SendData" declared implicitly
+  		sprintf((char*)Send_Data_buff,"***Threshold_Signature***");LoRa_SendData(Send_Data_buff);
+..\APPLICATION\ThresholdCrypto.c(849): warning:  #223-D: function "LoRa_SendData" declared implicitly
+  		LoRa_SendData(Send_Data_buff);
+..\APPLICATION\ThresholdCrypto.c(858): warning:  #223-D: function "LoRa_SendData" declared implicitly
+  		LoRa_SendData(Send_Data_buff);
+..\APPLICATION\ThresholdCrypto.c(871): warning:  #223-D: function "LoRa_Set" declared implicitly
+  		LoRa_Set();
+..\APPLICATION\ThresholdCrypto.c(872): warning:  #223-D: function "LoRa_SendData" declared implicitly
+  		sprintf((char*)Send_Data_buff,"SKs::");LoRa_SendData(Send_Data_buff);
+..\APPLICATION\ThresholdCrypto.c(868): warning:  #177-D: variable "sks"  was declared but never referenced
+  	BIG_160_28 sks[6];
+..\APPLICATION\ThresholdCrypto.c(913): warning:  #177-D: variable "M_FP"  was declared but never referenced
+  	FP_BN158 M_FP;
+..\APPLICATION\ThresholdCrypto.c(937): warning:  #223-D: function "LoRa_SendData" declared implicitly
+  	sprintf((char*)Send_Data_buff,"Dealer Time:");LoRa_SendData(Send_Data_buff);
+..\APPLICATION\ThresholdCrypto.c(61): warning:  #177-D: variable "message"  was declared but never referenced
+  static char message[] = "This is a test message";
+..\APPLICATION\ThresholdCrypto.c: 25 warnings, 0 errors
+linking...
+Program Size: Code=57440 RO-data=3700 RW-data=5460 ZI-data=291732  
+".\Objects\ThresholdCrypto.axf" - 0 Error(s), 159 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F7xx_DFP.2.15.2.pack
+                Keil.STM32F7xx_DFP.2.15.2
+                STMicroelectronics STM32F7 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  D:\MDK5.36\Packs\Keil\STM32F7xx_DFP\2.15.2\Drivers\CMSIS\Device\ST\STM32F7xx\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:01:06
+</pre>
+</body>
+</html>

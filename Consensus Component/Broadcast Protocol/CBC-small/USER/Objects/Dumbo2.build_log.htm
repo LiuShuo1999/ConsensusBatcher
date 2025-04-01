@@ -1,0 +1,655 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: shuo liu, sdu, LIC=KRMW3-AVM5U-FW92N-YWPKL-SK4DH-9NB83
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.36.0.0
+Toolchain Path:  D:\MDK5.36\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+B:\25-3代码整理\ConsensusBatcher\Consensus Component\Broadcast Protocol\CBC-small\USER\CBC-small.uvprojx
+Project File Date:  03/15/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\MDK5.36\ARM\ARMCC\Bin'
+*** Warning: You are compiling one or more files of source type C++ and have selected 'use MicroLIB'. MicroLIB does not support C++!
+  
+Build target 'Target 1'
+Note: source file 'D:\MDK5.36\Packs\ARM\mbedTLS\3.1.0\library\aes.c' - object file renamed from '.\Objects\aes.o' to '.\Objects\aes_1.o'.
+compiling utility.c...
+utility.h(17): warning:  #1295-D: Deprecated declaration init_public_key - give arg types
+  void init_public_key();
+utility.h(23): warning:  #1-D: last line of file ends without a newline
+  #endif /* UTILITY_H */
+utility.c(84): warning:  #223-D: function "RNG_Get_RandomNum" declared implicitly
+  		if( Random_idx % 4 == 0) random = RNG_Get_RandomNum();
+utility.c(92): warning:  #223-D: function "RNG_Init" declared implicitly
+  	while(RNG_Init())	 		    //初始化随机数发生器
+utility.c(133): warning:  #223-D: function "uECC_set_rng" declared implicitly
+      uECC_set_rng(my_RNG);
+utility.c(116): warning:  #177-D: variable "num_curves"  was declared but never referenced
+      int num_curves = 0;
+utility.c(275): warning:  #1-D: last line of file ends without a newline
+  }
+utility.c: 7 warnings, 0 errors
+compiling btim.c...
+..\BN158\bls_BN158.h(51): warning:  #1295-D: Deprecated declaration BLS_BN158_INIT - give arg types
+  int BLS_BN158_INIT();
+..\USER\CBC.h(138): warning:  #1-D: last line of file ends without a newline
+  #endif /* CBC_H */
+..\USER\utility.h(17): warning:  #1295-D: Deprecated declaration init_public_key - give arg types
+  void init_public_key();
+..\USER\utility.h(23): warning:  #1-D: last line of file ends without a newline
+  #endif /* UTILITY_H */
+..\Threshold_Signature\Thres_Sig.h(50): warning:  #1295-D: Deprecated declaration init_thres_sig - give arg types
+  void init_thres_sig();
+..\Threshold_Signature\Thres_Sig.h(54): warning:  #1295-D: Deprecated declaration dealer - give arg types
+  void dealer();
+..\Threshold_Signature\Thres_Sig.h(55): warning:  #1295-D: Deprecated declaration SK_sign - give arg types
+  void SK_sign();
+..\Threshold_Signature\Thres_Sig.h(56): warning:  #1295-D: Deprecated declaration PK_verify_sig_share - give arg types
+  void PK_verify_sig_share();
+..\Threshold_Signature\Thres_Sig.h(57): warning:  #1295-D: Deprecated declaration PK_verify_sig - give arg types
+  void PK_verify_sig();
+..\Threshold_Signature\Thres_Sig.h(58): warning:  #1295-D: Deprecated declaration PK_sig_combine_share - give arg types
+  void PK_sig_combine_share();
+..\Threshold_Signature\Thres_Sig.h(65): warning:  #1295-D: Deprecated declaration PRBC_test - give arg types
+  void PRBC_test();
+..\Threshold_Signature\Thres_Sig.h(77): warning:  #1295-D: Deprecated declaration CBC_PK_sig_combine_share - give arg types
+  void CBC_PK_sig_combine_share();
+..\Threshold_Signature\Thres_Sig.h(79): warning:  #1295-D: Deprecated declaration CBC_test - give arg types
+  void CBC_test();
+..\Threshold_Signature\Thres_Sig.h(86): warning:  #1295-D: Deprecated declaration VAL_CBC_PK_sig_combine_share - give arg types
+  void VAL_CBC_PK_sig_combine_share();
+..\Threshold_Signature\Thres_Sig.h(88): warning:  #1295-D: Deprecated declaration VAL_CBC_test - give arg types
+  void VAL_CBC_test();
+..\Threshold_Signature\Thres_Sig.h(89): warning:  #1-D: last line of file ends without a newline
+  #endif /* THRES_SIG_H */
+..\Threshold_Enc\Thres_Enc.h(50): warning:  #1295-D: Deprecated declaration init_thres_enc - give arg types
+  void init_thres_enc();
+..\Threshold_Enc\Thres_Enc.h(53): warning:  #1295-D: Deprecated declaration Tx_PK_verify_ciphertext - give arg types
+  void Tx_PK_verify_ciphertext();
+..\Threshold_Enc\Thres_Enc.h(72): warning:  #1-D: last line of file ends without a newline
+  #endif /* THRES_SIG_H */
+..\USER\CBC.h(138): warning:  #1-D: last line of file ends without a newline
+  #endif /* CBC_H */
+..\HARDWARE\TIMER\btim.c(547): warning:  #223-D: function "GPIO_Set" declared implicitly
+  	GPIO_Set(GPIOD,PIN14|PIN15,GPIO_MODE_AF,GPIO_OTYPE_PP,GPIO_SPEED_100M,GPIO_PUPD_PU);//复用功能,上拉输出
+..\HARDWARE\TIMER\btim.c(548): warning:  #223-D: function "GPIO_AF_Set" declared implicitly
+  	GPIO_AF_Set(GPIOD,14,2);	//PD14,AF2 
+..\HARDWARE\TIMER\btim.c: 22 warnings, 0 errors
+compiling mw1268_app.c...
+..\LORA\mw1268_app.c(109): warning:  #223-D: function "GPIO_Pin_Set" declared implicitly
+              LED0(0); /*DS0亮*/
+..\LORA\mw1268_app.c(117): warning:  #223-D: function "usart3_rx" declared implicitly
+  				usart3_rx(0);
+..\LORA\mw1268_app.c(122): warning:  #223-D: function "GPIO_Pin_Set" declared implicitly
+  				LED1(led1sta);led1sta = ~led1sta;
+..\LORA\mw1268_app.c(175): warning:  #223-D: function "GPIO_Pin_Set" declared implicitly
+              LED0(1); /*DS0灭*/
+..\LORA\mw1268_app.c(336): warning:  #188-D: enumerated type mixed with another type
+  	Lora_Device_Sta=0;//标记"配置模式"
+..\LORA\mw1268_app.c(365): warning:  #188-D: enumerated type mixed with another type
+  	Lora_Device_Sta=1;//标记"接收模式"
+..\LORA\mw1268_app.c(385): warning:  #177-D: variable "num"  was declared but never referenced
+      static uint8_t num = 0;
+..\LORA\mw1268_app.c(386): warning:  #177-D: variable "addr"  was declared but never referenced
+      uint16_t addr;
+..\LORA\mw1268_app.c(387): warning:  #177-D: variable "chn"  was declared but never referenced
+      uint8_t chn;
+..\LORA\mw1268_app.c(388): warning:  #177-D: variable "i"  was declared but never referenced
+      uint16_t i = 0;
+..\LORA\mw1268_app.c: 10 warnings, 0 errors
+compiling main.c...
+utility.h(17): warning:  #1295-D: Deprecated declaration init_public_key - give arg types
+  void init_public_key();
+utility.h(23): warning:  #1-D: last line of file ends without a newline
+  #endif /* UTILITY_H */
+..\BN158\bls_BN158.h(51): warning:  #1295-D: Deprecated declaration BLS_BN158_INIT - give arg types
+  int BLS_BN158_INIT();
+..\USER\CBC.h(138): warning:  #1-D: last line of file ends without a newline
+  #endif /* CBC_H */
+..\Threshold_Signature\Thres_Sig.h(50): warning:  #1295-D: Deprecated declaration init_thres_sig - give arg types
+  void init_thres_sig();
+..\Threshold_Signature\Thres_Sig.h(54): warning:  #1295-D: Deprecated declaration dealer - give arg types
+  void dealer();
+..\Threshold_Signature\Thres_Sig.h(55): warning:  #1295-D: Deprecated declaration SK_sign - give arg types
+  void SK_sign();
+..\Threshold_Signature\Thres_Sig.h(56): warning:  #1295-D: Deprecated declaration PK_verify_sig_share - give arg types
+  void PK_verify_sig_share();
+..\Threshold_Signature\Thres_Sig.h(57): warning:  #1295-D: Deprecated declaration PK_verify_sig - give arg types
+  void PK_verify_sig();
+..\Threshold_Signature\Thres_Sig.h(58): warning:  #1295-D: Deprecated declaration PK_sig_combine_share - give arg types
+  void PK_sig_combine_share();
+..\Threshold_Signature\Thres_Sig.h(65): warning:  #1295-D: Deprecated declaration PRBC_test - give arg types
+  void PRBC_test();
+..\Threshold_Signature\Thres_Sig.h(77): warning:  #1295-D: Deprecated declaration CBC_PK_sig_combine_share - give arg types
+  void CBC_PK_sig_combine_share();
+..\Threshold_Signature\Thres_Sig.h(79): warning:  #1295-D: Deprecated declaration CBC_test - give arg types
+  void CBC_test();
+..\Threshold_Signature\Thres_Sig.h(86): warning:  #1295-D: Deprecated declaration VAL_CBC_PK_sig_combine_share - give arg types
+  void VAL_CBC_PK_sig_combine_share();
+..\Threshold_Signature\Thres_Sig.h(88): warning:  #1295-D: Deprecated declaration VAL_CBC_test - give arg types
+  void VAL_CBC_test();
+..\Threshold_Signature\Thres_Sig.h(89): warning:  #1-D: last line of file ends without a newline
+  #endif /* THRES_SIG_H */
+..\Threshold_Enc\Thres_Enc.h(50): warning:  #1295-D: Deprecated declaration init_thres_enc - give arg types
+  void init_thres_enc();
+..\Threshold_Enc\Thres_Enc.h(53): warning:  #1295-D: Deprecated declaration Tx_PK_verify_ciphertext - give arg types
+  void Tx_PK_verify_ciphertext();
+..\Threshold_Enc\Thres_Enc.h(72): warning:  #1-D: last line of file ends without a newline
+  #endif /* THRES_SIG_H */
+CBC.h(138): warning:  #1-D: last line of file ends without a newline
+  #endif /* CBC_H */
+main.c(165): warning:  #1295-D: Deprecated declaration ENC_handler - give arg types
+  void ENC_handler();
+main.c(166): warning:  #1295-D: Deprecated declaration Tx_init - give arg types
+  void Tx_init();
+main.c(209): warning:  #223-D: function "LoRa_Init" declared implicitly
+  	while(LoRa_Init())//?????LORA???
+main.c(219): warning:  #223-D: function "LoRa_Set" declared implicitly
+  	LoRa_Set();
+main.c(225): warning:  #1295-D: Deprecated declaration ABA_init - give arg types
+  void ABA_init();
+main.c(226): warning:  #1295-D: Deprecated declaration ABA_STATE_handler - give arg types
+  void ABA_STATE_handler();
+main.c(229): warning:  #1295-D: Deprecated declaration RBC_init - give arg types
+  void RBC_init();
+main.c(230): warning:  #1295-D: Deprecated declaration RBC_INIT_handler - give arg types
+  void RBC_INIT_handler();
+main.c(231): warning:  #1295-D: Deprecated declaration RBC_ER_handler - give arg types
+  void RBC_ER_handler();
+main.c(232): warning:  #1295-D: Deprecated declaration PRBC_SIG_handler - give arg types
+  void PRBC_SIG_handler();
+main.c(234): warning:  #1295-D: Deprecated declaration VAL_CBC_init - give arg types
+  void VAL_CBC_init();
+main.c(235): warning:  #1295-D: Deprecated declaration VAL_CBC_STATE_handler - give arg types
+  void VAL_CBC_STATE_handler();
+main.c(237): warning:  #1295-D: Deprecated declaration CBC_init - give arg types
+  void CBC_init();
+main.c(238): warning:  #1295-D: Deprecated declaration CBC_STATE_handler - give arg types
+  void CBC_STATE_handler();
+main.c(240): warning:  #1295-D: Deprecated declaration PACKET_handler - give arg types
+  void PACKET_handler();
+main.c(407): warning:  #223-D: function "LoRa_SendData" declared implicitly
+  			LoRa_SendData(Send_Data_buff);	
+main.c(353): warning:  #177-D: variable "num"  was declared but never referenced
+  	u8 num=0,enevtvalue;
+main.c(353): warning:  #177-D: variable "enevtvalue"  was declared but never referenced
+  	u8 num=0,enevtvalue;
+main.c(354): warning:  #177-D: variable "event0flag"  was declared but never referenced
+  	static u8 event0flag,event1flag,event2flag;
+main.c(354): warning:  #177-D: variable "event1flag"  was declared but never referenced
+  	static u8 event0flag,event1flag,event2flag;
+main.c(354): warning:  #177-D: variable "event2flag"  was declared but never referenced
+  	static u8 event0flag,event1flag,event2flag;
+main.c(483): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *"
+  	Tx_PK_encrypt(tx_passwd,enc_tx_passwd[ID]);
+main.c(483): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *"
+  	Tx_PK_encrypt(tx_passwd,enc_tx_passwd[ID]);
+main.c(570): warning:  #940-D: missing return statement at end of non-void function "subset_or_not" 
+  }
+main.c(660): warning:  #223-D: function "LoRa_SendData" declared implicitly
+  						LoRa_SendData(Send_Data_buff);// id 0 "Hello LoRa"
+main.c(676): warning:  #223-D: function "LoRa_SendData" declared implicitly
+  					LoRa_SendData(Send_Data_buff);// id 0 "Hello LoRa"
+main.c(689): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+  		HASH256_hash(&sh256,hash);
+main.c(740): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+  	HASH256_hash(&sh256,hash);
+main.c(789): warning:  #223-D: function "LoRa_SendData" declared implicitly
+  						LoRa_SendData(Send_Data_buff);// id 0 "Hello LoRa"
+main.c(801): warning:  #223-D: function "LoRa_SendData" declared implicitly
+  								LoRa_SendData(Send_Data_buff);// id 0 "Hello LoRa"
+main.c(808): warning:  #223-D: function "LoRa_Set" declared implicitly
+  							LoRa_Set();	
+main.c(812): warning:  #223-D: function "LoRa_SendData" declared implicitly
+  							LoRa_SendData(Send_Data_buff);
+main.c(820): warning:  #223-D: function "LoRa_SendData" declared implicitly
+  							LoRa_SendData(Send_Data_buff);// id 0 "Hello LoRa"
+main.c(840): warning:  #223-D: function "LoRa_SendData" declared implicitly
+  					LoRa_SendData(Send_Data_buff);// id 0 "Hello LoRa"
+main.c(848): warning:  #223-D: function "LoRa_Set" declared implicitly
+  				LoRa_Set();	
+main.c(852): warning:  #223-D: function "LoRa_SendData" declared implicitly
+  				LoRa_SendData(Send_Data_buff);
+main.c: 56 warnings, 0 errors
+compiling usart3.c...
+..\BN158\bls_BN158.h(51): warning:  #1295-D: Deprecated declaration BLS_BN158_INIT - give arg types
+  int BLS_BN158_INIT();
+..\USER\CBC.h(138): warning:  #1-D: last line of file ends without a newline
+  #endif /* CBC_H */
+..\USER\utility.h(17): warning:  #1295-D: Deprecated declaration init_public_key - give arg types
+  void init_public_key();
+..\USER\utility.h(23): warning:  #1-D: last line of file ends without a newline
+  #endif /* UTILITY_H */
+..\Threshold_Signature\Thres_Sig.h(50): warning:  #1295-D: Deprecated declaration init_thres_sig - give arg types
+  void init_thres_sig();
+..\Threshold_Signature\Thres_Sig.h(54): warning:  #1295-D: Deprecated declaration dealer - give arg types
+  void dealer();
+..\Threshold_Signature\Thres_Sig.h(55): warning:  #1295-D: Deprecated declaration SK_sign - give arg types
+  void SK_sign();
+..\Threshold_Signature\Thres_Sig.h(56): warning:  #1295-D: Deprecated declaration PK_verify_sig_share - give arg types
+  void PK_verify_sig_share();
+..\Threshold_Signature\Thres_Sig.h(57): warning:  #1295-D: Deprecated declaration PK_verify_sig - give arg types
+  void PK_verify_sig();
+..\Threshold_Signature\Thres_Sig.h(58): warning:  #1295-D: Deprecated declaration PK_sig_combine_share - give arg types
+  void PK_sig_combine_share();
+..\Threshold_Signature\Thres_Sig.h(65): warning:  #1295-D: Deprecated declaration PRBC_test - give arg types
+  void PRBC_test();
+..\Threshold_Signature\Thres_Sig.h(77): warning:  #1295-D: Deprecated declaration CBC_PK_sig_combine_share - give arg types
+  void CBC_PK_sig_combine_share();
+..\Threshold_Signature\Thres_Sig.h(79): warning:  #1295-D: Deprecated declaration CBC_test - give arg types
+  void CBC_test();
+..\Threshold_Signature\Thres_Sig.h(86): warning:  #1295-D: Deprecated declaration VAL_CBC_PK_sig_combine_share - give arg types
+  void VAL_CBC_PK_sig_combine_share();
+..\Threshold_Signature\Thres_Sig.h(88): warning:  #1295-D: Deprecated declaration VAL_CBC_test - give arg types
+  void VAL_CBC_test();
+..\Threshold_Signature\Thres_Sig.h(89): warning:  #1-D: last line of file ends without a newline
+  #endif /* THRES_SIG_H */
+..\Threshold_Enc\Thres_Enc.h(50): warning:  #1295-D: Deprecated declaration init_thres_enc - give arg types
+  void init_thres_enc();
+..\Threshold_Enc\Thres_Enc.h(53): warning:  #1295-D: Deprecated declaration Tx_PK_verify_ciphertext - give arg types
+  void Tx_PK_verify_ciphertext();
+..\Threshold_Enc\Thres_Enc.h(72): warning:  #1-D: last line of file ends without a newline
+  #endif /* THRES_SIG_H */
+..\USER\CBC.h(138): warning:  #1-D: last line of file ends without a newline
+  #endif /* CBC_H */
+..\HARDWARE\USART3\usart3.c: 20 warnings, 0 errors
+compiling Thres_Sig.c...
+..\BN158\bls_BN158.h(51): warning:  #1295-D: Deprecated declaration BLS_BN158_INIT - give arg types
+  int BLS_BN158_INIT();
+..\Threshold_Signature\Thres_Sig.h(89): warning:  #1-D: last line of file ends without a newline
+  #endif /* THRES_SIG_H */
+..\USER\CBC.h(138): warning:  #1-D: last line of file ends without a newline
+  #endif /* CBC_H */
+..\USER\utility.h(17): warning:  #1295-D: Deprecated declaration init_public_key - give arg types
+  void init_public_key();
+..\USER\utility.h(23): warning:  #1-D: last line of file ends without a newline
+  #endif /* UTILITY_H */
+..\Threshold_Enc\Thres_Enc.h(50): warning:  #1295-D: Deprecated declaration init_thres_enc - give arg types
+  void init_thres_enc();
+..\Threshold_Enc\Thres_Enc.h(53): warning:  #1295-D: Deprecated declaration Tx_PK_verify_ciphertext - give arg types
+  void Tx_PK_verify_ciphertext();
+..\Threshold_Enc\Thres_Enc.h(72): warning:  #1-D: last line of file ends without a newline
+  #endif /* THRES_SIG_H */
+..\USER\CBC.h(138): warning:  #1-D: last line of file ends without a newline
+  #endif /* CBC_H */
+..\Threshold_Signature\Thres_Sig.h(50): warning:  #1295-D: Deprecated declaration init_thres_sig - give arg types
+  void init_thres_sig();
+..\Threshold_Signature\Thres_Sig.h(54): warning:  #1295-D: Deprecated declaration dealer - give arg types
+  void dealer();
+..\Threshold_Signature\Thres_Sig.h(55): warning:  #1295-D: Deprecated declaration SK_sign - give arg types
+  void SK_sign();
+..\Threshold_Signature\Thres_Sig.h(56): warning:  #1295-D: Deprecated declaration PK_verify_sig_share - give arg types
+  void PK_verify_sig_share();
+..\Threshold_Signature\Thres_Sig.h(57): warning:  #1295-D: Deprecated declaration PK_verify_sig - give arg types
+  void PK_verify_sig();
+..\Threshold_Signature\Thres_Sig.h(58): warning:  #1295-D: Deprecated declaration PK_sig_combine_share - give arg types
+  void PK_sig_combine_share();
+..\Threshold_Signature\Thres_Sig.h(65): warning:  #1295-D: Deprecated declaration PRBC_test - give arg types
+  void PRBC_test();
+..\Threshold_Signature\Thres_Sig.h(77): warning:  #1295-D: Deprecated declaration CBC_PK_sig_combine_share - give arg types
+  void CBC_PK_sig_combine_share();
+..\Threshold_Signature\Thres_Sig.h(79): warning:  #1295-D: Deprecated declaration CBC_test - give arg types
+  void CBC_test();
+..\Threshold_Signature\Thres_Sig.h(86): warning:  #1295-D: Deprecated declaration VAL_CBC_PK_sig_combine_share - give arg types
+  void VAL_CBC_PK_sig_combine_share();
+..\Threshold_Signature\Thres_Sig.h(88): warning:  #1295-D: Deprecated declaration VAL_CBC_test - give arg types
+  void VAL_CBC_test();
+..\Threshold_Signature\Thres_Sig.h(89): warning:  #1-D: last line of file ends without a newline
+  #endif /* THRES_SIG_H */
+..\Threshold_Signature\Thres_Sig.c(81): warning:  #223-D: function "LoRa_SendData" declared implicitly
+  		LoRa_SendData(Send_Data_buff);
+..\Threshold_Signature\Thres_Sig.c(90): warning:  #223-D: function "LoRa_SendData" declared implicitly
+  		LoRa_SendData(Send_Data_buff);
+..\Threshold_Signature\Thres_Sig.c(107): warning:  #550-D: variable "private_key_idx"  was set but never used
+  	u16 private_key_idx;
+..\Threshold_Signature\Thres_Sig.c(181): warning:  #223-D: function "LoRa_SendData" declared implicitly
+  			LoRa_SendData(Send_Data_buff);// id 0 "Hello LoRa"
+..\Threshold_Signature\Thres_Sig.c(232): warning:  #111-D: statement is unreachable
+  		sprintf((char*)Send_Data_buff,"PK_verify_sig_share[]: Yes ");
+..\Threshold_Signature\Thres_Sig.c(233): warning:  #223-D: function "LoRa_SendData" declared implicitly
+  		LoRa_SendData(Send_Data_buff);
+..\Threshold_Signature\Thres_Sig.c(238): warning:  #111-D: statement is unreachable
+  		sprintf((char*)Send_Data_buff,"PK_verify_sig_share[]: No ");
+..\Threshold_Signature\Thres_Sig.c(239): warning:  #223-D: function "LoRa_SendData" declared implicitly
+  		LoRa_SendData(Send_Data_buff);
+..\Threshold_Signature\Thres_Sig.c(353): warning:  #111-D: statement is unreachable
+  		sprintf((char*)Send_Data_buff,"PK_verify_sig: Yes");
+..\Threshold_Signature\Thres_Sig.c(354): warning:  #223-D: function "LoRa_SendData" declared implicitly
+  		LoRa_SendData(Send_Data_buff);
+..\Threshold_Signature\Thres_Sig.c(357): warning:  #111-D: statement is unreachable
+  		sprintf((char*)Send_Data_buff,"PK_verify_sig: No");
+..\Threshold_Signature\Thres_Sig.c(358): warning:  #223-D: function "LoRa_SendData" declared implicitly
+  		LoRa_SendData(Send_Data_buff);
+..\Threshold_Signature\Thres_Sig.c(450): warning:  #111-D: statement is unreachable
+  		sprintf((char*)Send_Data_buff,"PK_verify_sig_share[]: Yes ");
+..\Threshold_Signature\Thres_Sig.c(451): warning:  #223-D: function "LoRa_SendData" declared implicitly
+  		LoRa_SendData(Send_Data_buff);
+..\Threshold_Signature\Thres_Sig.c(454): warning:  #111-D: statement is unreachable
+  		sprintf((char*)Send_Data_buff,"PK_verify_sig_share[]: No ");
+..\Threshold_Signature\Thres_Sig.c(455): warning:  #223-D: function "LoRa_SendData" declared implicitly
+  		LoRa_SendData(Send_Data_buff);
+..\Threshold_Signature\Thres_Sig.c(563): warning:  #223-D: function "LoRa_SendData" declared implicitly
+  			LoRa_SendData(Send_Data_buff);
+..\Threshold_Signature\Thres_Sig.c(571): warning:  #223-D: function "uECC_sign" declared implicitly
+  		if (!uECC_sign(private_key[ID], hash, 32, sig, uECC_secp160r1())) {
+..\Threshold_Signature\Thres_Sig.c(571): warning:  #223-D: function "uECC_secp160r1" declared implicitly
+  		if (!uECC_sign(private_key[ID], hash, 32, sig, uECC_secp160r1())) {
+..\Threshold_Signature\Thres_Sig.c(574): warning:  #223-D: function "LoRa_SendData" declared implicitly
+  			LoRa_SendData(Send_Data_buff);// id 0 "Hello LoRa"
+..\Threshold_Signature\Thres_Sig.c(629): warning:  #223-D: function "LoRa_SendData" declared implicitly
+  			LoRa_SendData(Send_Data_buff);// id 0 "Hello LoRa"
+..\Threshold_Signature\Thres_Sig.c(689): warning:  #111-D: statement is unreachable
+  		sprintf((char*)Send_Data_buff,"PK_verify_sig_share[]: Yes ");
+..\Threshold_Signature\Thres_Sig.c(690): warning:  #223-D: function "LoRa_SendData" declared implicitly
+  		LoRa_SendData(Send_Data_buff);
+..\Threshold_Signature\Thres_Sig.c(693): warning:  #111-D: statement is unreachable
+  		sprintf((char*)Send_Data_buff,"PK_verify_sig_share[]: No ");
+..\Threshold_Signature\Thres_Sig.c(694): warning:  #223-D: function "LoRa_SendData" declared implicitly
+  		LoRa_SendData(Send_Data_buff);
+..\Threshold_Signature\Thres_Sig.c(815): warning:  #223-D: function "LoRa_SendData" declared implicitly
+  		LoRa_SendData(Send_Data_buff);
+..\Threshold_Signature\Thres_Sig.c(818): warning:  #223-D: function "LoRa_SendData" declared implicitly
+  		LoRa_SendData(Send_Data_buff);
+..\Threshold_Signature\Thres_Sig.c(862): warning:  #111-D: statement is unreachable
+  		sprintf((char*)Send_Data_buff,"PK_verify_sig: Yes");
+..\Threshold_Signature\Thres_Sig.c(863): warning:  #223-D: function "LoRa_SendData" declared implicitly
+  		LoRa_SendData(Send_Data_buff);
+..\Threshold_Signature\Thres_Sig.c(866): warning:  #111-D: statement is unreachable
+  		sprintf((char*)Send_Data_buff,"PK_verify_sig: No");
+..\Threshold_Signature\Thres_Sig.c(867): warning:  #223-D: function "LoRa_SendData" declared implicitly
+  		LoRa_SendData(Send_Data_buff);
+..\Threshold_Signature\Thres_Sig.c(941): warning:  #223-D: function "LoRa_SendData" declared implicitly
+  			LoRa_SendData(Send_Data_buff);// id 0 "Hello LoRa"
+..\Threshold_Signature\Thres_Sig.c(1014): warning:  #111-D: statement is unreachable
+  		sprintf((char*)Send_Data_buff,"PK_verify_sig_share[]: Yes ");
+..\Threshold_Signature\Thres_Sig.c(1015): warning:  #223-D: function "LoRa_SendData" declared implicitly
+  		LoRa_SendData(Send_Data_buff);
+..\Threshold_Signature\Thres_Sig.c(1018): warning:  #111-D: statement is unreachable
+  		sprintf((char*)Send_Data_buff,"PK_verify_sig_share[]: No ");
+..\Threshold_Signature\Thres_Sig.c(1019): warning:  #223-D: function "LoRa_SendData" declared implicitly
+  		LoRa_SendData(Send_Data_buff);
+..\Threshold_Signature\Thres_Sig.c(1218): warning:  #223-D: function "LoRa_SendData" declared implicitly
+  		LoRa_SendData(Send_Data_buff);
+..\Threshold_Signature\Thres_Sig.c(1222): warning:  #223-D: function "LoRa_SendData" declared implicitly
+  			LoRa_SendData(Send_Data_buff);
+..\Threshold_Signature\Thres_Sig.c(1279): warning:  #111-D: statement is unreachable
+  		sprintf((char*)Send_Data_buff,"PK_verify_sig: Yes");
+..\Threshold_Signature\Thres_Sig.c(1280): warning:  #223-D: function "LoRa_SendData" declared implicitly
+  		LoRa_SendData(Send_Data_buff);
+..\Threshold_Signature\Thres_Sig.c(1283): warning:  #111-D: statement is unreachable
+  		sprintf((char*)Send_Data_buff,"PK_verify_sig: No");
+..\Threshold_Signature\Thres_Sig.c(1284): warning:  #223-D: function "LoRa_SendData" declared implicitly
+  		LoRa_SendData(Send_Data_buff);
+..\Threshold_Signature\Thres_Sig.c: 63 warnings, 0 errors
+compiling dma.c...
+..\BN158\bls_BN158.h(51): warning:  #1295-D: Deprecated declaration BLS_BN158_INIT - give arg types
+  int BLS_BN158_INIT();
+..\USER\CBC.h(138): warning:  #1-D: last line of file ends without a newline
+  #endif /* CBC_H */
+..\USER\utility.h(17): warning:  #1295-D: Deprecated declaration init_public_key - give arg types
+  void init_public_key();
+..\USER\utility.h(23): warning:  #1-D: last line of file ends without a newline
+  #endif /* UTILITY_H */
+..\Threshold_Signature\Thres_Sig.h(50): warning:  #1295-D: Deprecated declaration init_thres_sig - give arg types
+  void init_thres_sig();
+..\Threshold_Signature\Thres_Sig.h(54): warning:  #1295-D: Deprecated declaration dealer - give arg types
+  void dealer();
+..\Threshold_Signature\Thres_Sig.h(55): warning:  #1295-D: Deprecated declaration SK_sign - give arg types
+  void SK_sign();
+..\Threshold_Signature\Thres_Sig.h(56): warning:  #1295-D: Deprecated declaration PK_verify_sig_share - give arg types
+  void PK_verify_sig_share();
+..\Threshold_Signature\Thres_Sig.h(57): warning:  #1295-D: Deprecated declaration PK_verify_sig - give arg types
+  void PK_verify_sig();
+..\Threshold_Signature\Thres_Sig.h(58): warning:  #1295-D: Deprecated declaration PK_sig_combine_share - give arg types
+  void PK_sig_combine_share();
+..\Threshold_Signature\Thres_Sig.h(65): warning:  #1295-D: Deprecated declaration PRBC_test - give arg types
+  void PRBC_test();
+..\Threshold_Signature\Thres_Sig.h(77): warning:  #1295-D: Deprecated declaration CBC_PK_sig_combine_share - give arg types
+  void CBC_PK_sig_combine_share();
+..\Threshold_Signature\Thres_Sig.h(79): warning:  #1295-D: Deprecated declaration CBC_test - give arg types
+  void CBC_test();
+..\Threshold_Signature\Thres_Sig.h(86): warning:  #1295-D: Deprecated declaration VAL_CBC_PK_sig_combine_share - give arg types
+  void VAL_CBC_PK_sig_combine_share();
+..\Threshold_Signature\Thres_Sig.h(88): warning:  #1295-D: Deprecated declaration VAL_CBC_test - give arg types
+  void VAL_CBC_test();
+..\Threshold_Signature\Thres_Sig.h(89): warning:  #1-D: last line of file ends without a newline
+  #endif /* THRES_SIG_H */
+..\Threshold_Enc\Thres_Enc.h(50): warning:  #1295-D: Deprecated declaration init_thres_enc - give arg types
+  void init_thres_enc();
+..\Threshold_Enc\Thres_Enc.h(53): warning:  #1295-D: Deprecated declaration Tx_PK_verify_ciphertext - give arg types
+  void Tx_PK_verify_ciphertext();
+..\Threshold_Enc\Thres_Enc.h(72): warning:  #1-D: last line of file ends without a newline
+  #endif /* THRES_SIG_H */
+..\USER\CBC.h(138): warning:  #1-D: last line of file ends without a newline
+  #endif /* CBC_H */
+..\HARDWARE\DMA\dma.c: 20 warnings, 0 errors
+compiling Thres_Enc.c...
+..\BN158\bls_BN158.h(51): warning:  #1295-D: Deprecated declaration BLS_BN158_INIT - give arg types
+  int BLS_BN158_INIT();
+..\USER\CBC.h(138): warning:  #1-D: last line of file ends without a newline
+  #endif /* CBC_H */
+..\USER\utility.h(17): warning:  #1295-D: Deprecated declaration init_public_key - give arg types
+  void init_public_key();
+..\USER\utility.h(23): warning:  #1-D: last line of file ends without a newline
+  #endif /* UTILITY_H */
+..\Threshold_Signature\Thres_Sig.h(50): warning:  #1295-D: Deprecated declaration init_thres_sig - give arg types
+  void init_thres_sig();
+..\Threshold_Signature\Thres_Sig.h(54): warning:  #1295-D: Deprecated declaration dealer - give arg types
+  void dealer();
+..\Threshold_Signature\Thres_Sig.h(55): warning:  #1295-D: Deprecated declaration SK_sign - give arg types
+  void SK_sign();
+..\Threshold_Signature\Thres_Sig.h(56): warning:  #1295-D: Deprecated declaration PK_verify_sig_share - give arg types
+  void PK_verify_sig_share();
+..\Threshold_Signature\Thres_Sig.h(57): warning:  #1295-D: Deprecated declaration PK_verify_sig - give arg types
+  void PK_verify_sig();
+..\Threshold_Signature\Thres_Sig.h(58): warning:  #1295-D: Deprecated declaration PK_sig_combine_share - give arg types
+  void PK_sig_combine_share();
+..\Threshold_Signature\Thres_Sig.h(65): warning:  #1295-D: Deprecated declaration PRBC_test - give arg types
+  void PRBC_test();
+..\Threshold_Signature\Thres_Sig.h(77): warning:  #1295-D: Deprecated declaration CBC_PK_sig_combine_share - give arg types
+  void CBC_PK_sig_combine_share();
+..\Threshold_Signature\Thres_Sig.h(79): warning:  #1295-D: Deprecated declaration CBC_test - give arg types
+  void CBC_test();
+..\Threshold_Signature\Thres_Sig.h(86): warning:  #1295-D: Deprecated declaration VAL_CBC_PK_sig_combine_share - give arg types
+  void VAL_CBC_PK_sig_combine_share();
+..\Threshold_Signature\Thres_Sig.h(88): warning:  #1295-D: Deprecated declaration VAL_CBC_test - give arg types
+  void VAL_CBC_test();
+..\Threshold_Signature\Thres_Sig.h(89): warning:  #1-D: last line of file ends without a newline
+  #endif /* THRES_SIG_H */
+..\Threshold_Enc\Thres_Enc.h(72): warning:  #1-D: last line of file ends without a newline
+  #endif /* THRES_SIG_H */
+..\USER\CBC.h(138): warning:  #1-D: last line of file ends without a newline
+  #endif /* CBC_H */
+..\Threshold_Enc\Thres_Enc.h(50): warning:  #1295-D: Deprecated declaration init_thres_enc - give arg types
+  void init_thres_enc();
+..\Threshold_Enc\Thres_Enc.h(53): warning:  #1295-D: Deprecated declaration Tx_PK_verify_ciphertext - give arg types
+  void Tx_PK_verify_ciphertext();
+..\Threshold_Enc\Thres_Enc.h(72): warning:  #1-D: last line of file ends without a newline
+  #endif /* THRES_SIG_H */
+..\Threshold_Enc\Thres_Enc.c(78): warning:  #1295-D: Deprecated declaration PK_verify_ciphertext - give arg types
+  void PK_verify_ciphertext();
+..\Threshold_Enc\Thres_Enc.c(79): warning:  #1295-D: Deprecated declaration SK_decrypt_share - give arg types
+  void SK_decrypt_share();
+..\Threshold_Enc\Thres_Enc.c(80): warning:  #1295-D: Deprecated declaration PK_verify_share - give arg types
+  void PK_verify_share();
+..\Threshold_Enc\Thres_Enc.c(81): warning:  #1295-D: Deprecated declaration PK_combine_share - give arg types
+  void PK_combine_share();
+..\Threshold_Enc\Thres_Enc.c(82): warning:  #1295-D: Deprecated declaration testdemo - give arg types
+  void testdemo();
+..\Threshold_Enc\Thres_Enc.c(85): warning:  #1295-D: Deprecated declaration Enc_dealer - give arg types
+  void Enc_dealer();
+..\Threshold_Enc\Thres_Enc.c(91): warning:  #1295-D: Deprecated declaration Tx_PK_verify_ciphertext - give arg types
+  void Tx_PK_verify_ciphertext();
+..\Threshold_Enc\Thres_Enc.c(115): warning:  #223-D: function "LoRa_SendData" declared implicitly
+  		LoRa_SendData(Send_Data_buff);
+..\Threshold_Enc\Thres_Enc.c(124): warning:  #223-D: function "LoRa_SendData" declared implicitly
+  		LoRa_SendData(Send_Data_buff);
+..\Threshold_Enc\Thres_Enc.c(144): warning:  #550-D: variable "private_key_idx"  was set but never used
+  	u16 private_key_idx;
+..\Threshold_Enc\Thres_Enc.c(251): warning:  #223-D: function "CREATE_CSPRNG" declared implicitly
+      CREATE_CSPRNG(&RNGx, &RAW);  // initialise strong RNG
+..\Threshold_Enc\Thres_Enc.c(501): warning:  #223-D: function "LoRa_SendData" declared implicitly
+  			LoRa_SendData(Send_Data_buff);
+..\Threshold_Enc\Thres_Enc.c(504): warning:  #111-D: statement is unreachable
+  		return 0;
+..\Threshold_Enc\Thres_Enc.c(639): warning:  #550-D: variable "m_"  was set but never used
+  	char m_[100];for(int i=0;i<100;i++)m_[i]=NULL;
+..\Threshold_Enc\Thres_Enc.c(700): warning:  #223-D: function "CREATE_CSPRNG" declared implicitly
+      CREATE_CSPRNG(&RNGx, &RAW);  // initialise strong RNG
+..\Threshold_Enc\Thres_Enc.c(729): warning:  #223-D: function "LoRa_SendData" declared implicitly
+  		LoRa_SendData(Send_Data_buff);
+..\Threshold_Enc\Thres_Enc.c(732): warning:  #223-D: function "LoRa_SendData" declared implicitly
+  		LoRa_SendData(Send_Data_buff);
+..\Threshold_Enc\Thres_Enc.c(756): warning:  #111-D: statement is unreachable
+  	ECP_BN158_copy(&g1_neg,&Enc_g1);
+..\Threshold_Enc\Thres_Enc.c(924): warning:  #177-D: variable "sk_num"  was declared but never referenced
+  	BIG_160_28 sk_num;
+..\Threshold_Enc\Thres_Enc.c(966): warning:  #223-D: function "LoRa_SendData" declared implicitly
+  			LoRa_SendData(Send_Data_buff);
+..\Threshold_Enc\Thres_Enc.c(1103): warning:  #223-D: function "LoRa_SendData" declared implicitly
+  		LoRa_SendData(Send_Data_buff);
+..\Threshold_Enc\Thres_Enc.c(1106): warning:  #223-D: function "LoRa_SendData" declared implicitly
+  		LoRa_SendData(Send_Data_buff);
+..\Threshold_Enc\Thres_Enc.c(1705): warning:  #177-D: variable "mc"  was declared but never referenced
+  	char mc[10] = "geng1";
+..\Threshold_Enc\Thres_Enc.c: 44 warnings, 0 errors
+linking...
+Program Size: Code=65128 RO-data=3660 RW-data=5160 ZI-data=317328  
+".\Objects\Dumbo2.axf" - 0 Error(s), 242 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.mbedTLS.3.1.0.pack
+                ARM.mbedTLS.3.1.0
+                ARM mbed Cryptographic and SSL/TLS library
+   * Component: mbed TLS Version: 3.1.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F7xx_DFP.2.15.2.pack
+                Keil.STM32F7xx_DFP.2.15.2
+                STMicroelectronics STM32F7 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\Security
+  .\RTE\_Target_1
+  D:\MDK5.36\Packs\ARM\mbedTLS\3.1.0\RTE\include
+  D:\MDK5.36\Packs\ARM\mbedTLS\3.1.0\include
+  D:\MDK5.36\Packs\Keil\STM32F7xx_DFP\2.15.2\Drivers\CMSIS\Device\ST\STM32F7xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::Security:mbed TLS:3.1.0
+      Source file:   library\ecjpake.c
+      Source file:   library\entropy_poll.c
+      Source file:   library\ecp_curves.c
+      Source file:   library\error.c
+      Source file:   library\dhm.c
+      Source file:   library\gcm.c
+      Source file:   library\aria.c
+      Source file:   library\chacha20.c
+      Source file:   library\camellia.c
+      Source file:   library\base64.c
+      Source file:   library\cipher_wrap.c
+      Source file:   library\constant_time.c
+      Source file:   library\ecdh.c
+      Source file:   library\ecdsa.c
+      Source file:   library\ecp.c
+      Source file:   library\entropy.c
+      Include file:  RTE\configs\mbedTLS_config.h
+      Source file:   library\asn1write.c
+      Source file:   library\ccm.c
+      Include file:  RTE\configs\mbedTLS_crypto_config.h
+      Source file:   library\bignum.c
+      Source file:   library\aes.c
+      Source file:   library\cipher.c
+      Source file:   library\cmac.c
+      Source file:   library\asn1parse.c
+      Source file:   library\debug.c
+      Source file:   library\des.c
+      Source file:   library\chachapoly.c
+      Source file:   library\ctr_drbg.c
+      Source file:   library\pkwrite.c
+      Source file:   library\psa_crypto_aead.c
+      Source file:   library\pkcs12.c
+      Source file:   library\hmac_drbg.c
+      Source file:   library\pk_wrap.c
+      Source file:   library\memory_buffer_alloc.c
+      Source file:   library\net_sockets.c
+      Source file:   library\psa_crypto_cipher.c
+      Source file:   library\psa_crypto_client.c
+      Source file:   library\nist_kw.c
+      Source file:   library\platform_util.c
+      Source file:   library\mps_reader.c
+      Source file:   library\pkparse.c
+      Source file:   library\md.c
+      Source file:   library\platform.c
+      Source file:   library\psa_crypto.c
+      Source file:   library\psa_crypto_driver_wrappers.c
+      Source file:   library\poly1305.c
+      Source file:   library\psa_crypto_ecp.c
+      Source file:   library\psa_crypto_hash.c
+      Source file:   library\oid.c
+      Source file:   library\pk.c
+      Source file:   library\pkcs5.c
+      Source file:   library\psa_crypto_rsa.c
+      Source file:   library\mps_trace.c
+      Source file:   library\psa_crypto_se.c
+      Source file:   library\psa_crypto_mac.c
+      Source file:   library\md5.c
+      Source file:   library\hkdf.c
+      Source file:   library\pem.c
+      Source file:   library\ssl_cache.c
+      Source file:   library\ssl_cookie.c
+      Source file:   library\ssl_tls.c
+      Source file:   library\ssl_tls13_client.c
+      Source file:   library\ssl_tls13_generic.c
+      Source file:   library\version.c
+      Source file:   library\rsa_alt_helpers.c
+      Source file:   library\sha1.c
+      Source file:   library\version_features.c
+      Source file:   library\ssl_ticket.c
+      Source file:   library\psa_crypto_storage.c
+      Source file:   library\ssl_tls13_server.c
+      Source file:   library\rsa.c
+      Source file:   library\threading.c
+      Source file:   library\x509.c
+      Source file:   library\ssl_debug_helpers_generated.c
+      Source file:   library\ssl_srv.c
+      Source file:   library\x509_create.c
+      Source file:   library\timing.c
+      Source file:   library\psa_its_file.c
+      Source file:   library\sha256.c
+      Source file:   library\psa_crypto_slot_management.c
+      Source file:   library\ripemd160.c
+      Source file:   library\x509_crl.c
+      Source file:   library\ssl_ciphersuites.c
+      Source file:   library\x509_crt.c
+      Source file:   library\x509_csr.c
+      Source file:   library\x509write_crt.c
+      Source file:   library\sha512.c
+      Source file:   library\ssl_msg.c
+      Source file:   library\ssl_tls13_keys.c
+      Source file:   library\ssl_cli.c
+      Source file:   library\x509write_csr.c
+Build Time Elapsed:  00:00:13
+</pre>
+</body>
+</html>

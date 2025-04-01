@@ -1,0 +1,17 @@
+.\obj\platform_util.o: D:\MDK5.36\Packs\ARM\mbedTLS\3.1.0\library\platform_util.c
+.\obj\platform_util.o: D:\MDK5.36\Packs\ARM\mbedTLS\3.1.0\library\common.h
+.\obj\platform_util.o: D:\MDK5.36\Packs\ARM\mbedTLS\3.1.0\include\mbedtls/build_info.h
+.\obj\platform_util.o: D:\MDK5.36\Packs\ARM\mbedTLS\3.1.0\RTE\include\mbedTLS_config_wrapper.h
+.\obj\platform_util.o: .\RTE\Security\mbedTLS_config.h
+.\obj\platform_util.o: D:\MDK5.36\Packs\ARM\mbedTLS\3.1.0\include\mbedtls/check_config.h
+.\obj\platform_util.o: D:\MDK5.36\ARM\ARMCC\Bin\..\include\limits.h
+.\obj\platform_util.o: D:\MDK5.36\ARM\ARMCC\Bin\..\include\stdint.h
+.\obj\platform_util.o: D:\MDK5.36\Packs\ARM\mbedTLS\3.1.0\include\mbedtls/platform_util.h
+.\obj\platform_util.o: D:\MDK5.36\ARM\ARMCC\Bin\..\include\stddef.h
+.\obj\platform_util.o: D:\MDK5.36\Packs\ARM\mbedTLS\3.1.0\include\mbedtls/platform.h
+.\obj\platform_util.o: D:\MDK5.36\Packs\ARM\mbedTLS\3.1.0\include\mbedtls/private_access.h
+.\obj\platform_util.o: D:\MDK5.36\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\platform_util.o: D:\MDK5.36\ARM\ARMCC\Bin\..\include\stdlib.h
+.\obj\platform_util.o: D:\MDK5.36\ARM\ARMCC\Bin\..\include\time.h
+.\obj\platform_util.o: D:\MDK5.36\Packs\ARM\mbedTLS\3.1.0\include\mbedtls/threading.h
+.\obj\platform_util.o: D:\MDK5.36\ARM\ARMCC\Bin\..\include\string.h

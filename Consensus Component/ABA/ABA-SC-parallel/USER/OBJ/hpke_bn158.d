@@ -1,0 +1,17 @@
+.\obj\hpke_bn158.o: ..\BN158\hpke_BN158.c
+.\obj\hpke_bn158.o: D:\MDK5.36\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\hpke_bn158.o: D:\MDK5.36\ARM\ARMCC\Bin\..\include\stdlib.h
+.\obj\hpke_bn158.o: D:\MDK5.36\ARM\ARMCC\Bin\..\include\string.h
+.\obj\hpke_bn158.o: ..\BN158\hpke_BN158.h
+.\obj\hpke_bn158.o: ..\BN158\ecdh_BN158.h
+.\obj\hpke_bn158.o: ..\BN158\ecp_BN158.h
+.\obj\hpke_bn158.o: ..\BN158\fp_BN158.h
+.\obj\hpke_bn158.o: ..\BN158\big_160_28.h
+.\obj\hpke_bn158.o: D:\MDK5.36\ARM\ARMCC\Bin\..\include\inttypes.h
+.\obj\hpke_bn158.o: D:\MDK5.36\ARM\ARMCC\Bin\..\include\stdint.h
+.\obj\hpke_bn158.o: ..\BN158\arch.h
+.\obj\hpke_bn158.o: D:\MDK5.36\ARM\ARMCC\Bin\..\include\stdbool.h
+.\obj\hpke_bn158.o: ..\BN158\core.h
+.\obj\hpke_bn158.o: ..\BN158\config_big_160_28.h
+.\obj\hpke_bn158.o: ..\BN158\config_field_BN158.h
+.\obj\hpke_bn158.o: ..\BN158\config_curve_BN158.h

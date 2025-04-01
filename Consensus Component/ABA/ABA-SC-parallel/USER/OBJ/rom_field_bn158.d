@@ -1,0 +1,12 @@
+.\obj\rom_field_bn158.o: ..\BN158\rom_field_BN158.c
+.\obj\rom_field_bn158.o: ..\BN158\arch.h
+.\obj\rom_field_bn158.o: D:\MDK5.36\ARM\ARMCC\Bin\..\include\stdint.h
+.\obj\rom_field_bn158.o: D:\MDK5.36\ARM\ARMCC\Bin\..\include\stdbool.h
+.\obj\rom_field_bn158.o: ..\BN158\fp_BN158.h
+.\obj\rom_field_bn158.o: ..\BN158\big_160_28.h
+.\obj\rom_field_bn158.o: D:\MDK5.36\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\rom_field_bn158.o: D:\MDK5.36\ARM\ARMCC\Bin\..\include\stdlib.h
+.\obj\rom_field_bn158.o: D:\MDK5.36\ARM\ARMCC\Bin\..\include\inttypes.h
+.\obj\rom_field_bn158.o: ..\BN158\core.h
+.\obj\rom_field_bn158.o: ..\BN158\config_big_160_28.h
+.\obj\rom_field_bn158.o: ..\BN158\config_field_BN158.h

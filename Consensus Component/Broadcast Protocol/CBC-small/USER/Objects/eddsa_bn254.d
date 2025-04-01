@@ -1,0 +1,16 @@
+.\objects\eddsa_bn254.o: ..\BN254\eddsa_BN254.c
+.\objects\eddsa_bn254.o: D:\MDK5.36\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\eddsa_bn254.o: D:\MDK5.36\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\eddsa_bn254.o: D:\MDK5.36\ARM\ARMCC\Bin\..\include\time.h
+.\objects\eddsa_bn254.o: ..\BN254\eddsa_BN254.h
+.\objects\eddsa_bn254.o: ..\BN254\ecp_BN254.h
+.\objects\eddsa_bn254.o: ..\BN254\fp_BN254.h
+.\objects\eddsa_bn254.o: ..\BN254\big_256_28.h
+.\objects\eddsa_bn254.o: D:\MDK5.36\ARM\ARMCC\Bin\..\include\inttypes.h
+.\objects\eddsa_bn254.o: D:\MDK5.36\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\eddsa_bn254.o: ..\BN254\arch.h
+.\objects\eddsa_bn254.o: D:\MDK5.36\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\eddsa_bn254.o: ..\BN254\core.h
+.\objects\eddsa_bn254.o: ..\BN254\config_big_256_28.h
+.\objects\eddsa_bn254.o: ..\BN254\config_field_BN254.h
+.\objects\eddsa_bn254.o: ..\BN254\config_curve_BN254.h

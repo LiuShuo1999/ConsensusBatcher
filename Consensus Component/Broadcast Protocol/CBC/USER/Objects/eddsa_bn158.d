@@ -1,0 +1,16 @@
+.\objects\eddsa_bn158.o: ..\BN158\eddsa_BN158.c
+.\objects\eddsa_bn158.o: D:\MDK5.36\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\eddsa_bn158.o: D:\MDK5.36\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\eddsa_bn158.o: D:\MDK5.36\ARM\ARMCC\Bin\..\include\time.h
+.\objects\eddsa_bn158.o: ..\BN158\eddsa_BN158.h
+.\objects\eddsa_bn158.o: ..\BN158\ecp_BN158.h
+.\objects\eddsa_bn158.o: ..\BN158\fp_BN158.h
+.\objects\eddsa_bn158.o: ..\BN158\big_160_28.h
+.\objects\eddsa_bn158.o: D:\MDK5.36\ARM\ARMCC\Bin\..\include\inttypes.h
+.\objects\eddsa_bn158.o: D:\MDK5.36\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\eddsa_bn158.o: ..\BN158\arch.h
+.\objects\eddsa_bn158.o: D:\MDK5.36\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\eddsa_bn158.o: ..\BN158\core.h
+.\objects\eddsa_bn158.o: ..\BN158\config_big_160_28.h
+.\objects\eddsa_bn158.o: ..\BN158\config_field_BN158.h
+.\objects\eddsa_bn158.o: ..\BN158\config_curve_BN158.h
